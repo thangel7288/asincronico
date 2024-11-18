@@ -1,0 +1,29 @@
+{
+    "biblioteca": [
+        {
+            "titulo": "libro fantasia.",
+            "descripcion": " Alicia",
+            "id": 9864
+        },
+        {
+            "titulo": "Novela",
+            "descripcion": "",
+            "id": 4238
+        },
+        {
+            "titulo": "Libro colombiano",
+            "descripcion": "",
+            "id": 63245
+        },
+        {
+            "titulo": "Libro",
+            "descripcion": "n.",
+            "id": 7898
+        },
+        {
+            "titulo": "Libroos",
+            "descripcion": "n..",
+            "id": 7862
+        }
+    ]
+}

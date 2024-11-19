@@ -1,60 +1,85 @@
 /* estilos.css */
+/* Reset general */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilo general del body */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f7fc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
+    padding: 0;
 }
 
+/* Título principal */
 h1 {
     color: #2d3e50;
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    margin-top: 50px;
+    letter-spacing: 1px;
 }
 
+/* Contenedor principal */
 .container {
-    max-width: 900px;
-    margin: 0 auto;
+    width: 80%;
+    max-width: 1000px;
+    margin: 50px auto;
     background-color: #ffffff;
-    padding: 30px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Diseño de tarjetas de contenido */
+.card {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 200px;
+    object-fit: cover;
 }
 
-button {
-    background-color: #3498db;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 4px;
+.card h3 {
+    color: #2d3e50;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.card p {
+    color: #777;
     font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
 }
 
-button:hover {
-    background-color: #2980b9;
-    transform: translateY(-3px);
+/* Efecto hover para las tarjetas */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-button:active {
-    background-color: #1c5980;
-    transform: translateY(0);
-}
-
+/* Pie de página */
 footer {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
     color: #7f8c8d;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 footer a {
@@ -66,3 +91,4 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+

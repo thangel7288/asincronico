@@ -8,17 +8,23 @@ const manejador = {
         return objetivo[propiedad]
     },
     set(objetivo, propiedad, valor){
-        console.log(Object.keys(objetivo));
-        
-        if (propiedad == "nombre" && !isNaN(valor)) {
-            throw new Error ("Valor no permitido");
+        if(Object.keys(objetivo).indexOf(propiedad) === -1){ 
+        return console.log(`la propiedad ${propiedad} no existe`)
+        }
+        if (propiedad == "nombre" && !/^[a-zA-Z\s]+$/.test(valor)) {
+            throw new Error ("Valor debe contener solo letras y espacios");
     
+        }
+        if (propiedad == "edad" && !/^[0-9]+$/.test(valor)) {
+            throw new Error("Valor debe contener solo numeros");
+            
         }
         objetivo[propiedad] = valor
     }
 }
 const proxy = new Proxy(persona, manejador);
-proxy.nombre = "Angel lizarazo";
+proxy.nombre = "Angel lizarazo"
+proxy.edad = "letras"
 console.log(proxy.nombre);
 console.log(persona);
 
